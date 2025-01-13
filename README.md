@@ -24,11 +24,11 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   
+   git clone https://github.com/NikithaJunuthula123/portfolio-website.git
    ```
 2. Navigate to the project directory:
    ```bash
-  
+   cd portfolio-website
    ```
 3. Open `index.html` in your preferred web browser.
 
