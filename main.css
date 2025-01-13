@@ -1,0 +1,1028 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Waltograph';
+    src: url('waltographUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Product Sans', sans-serif;
+
+
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.pic-plus-title-socials {
+    display: flex;
+    /*align-items: flex-start; */
+}
+
+.top-name h1 {
+    margin: 0; 
+    font-size: 3em;
+    margin-bottom: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    height: 100%;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+.socials{
+    margin: 0px 4px; 
+}
+
+.social-title {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 6em;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    position: fixed; 
+    height: 100vh; 
+    overflow-y: auto;
+}
+
+
+.fa.fa-envelope-o, .fa-linkedin-square, .fa.fa-github, .fa.fa-instagram, .fab.fa-github-square{
+    font-size: 25pt;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center; 
+}
+
+.social-icons a {
+    margin: 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-icons img {
+    width: auto;
+    height: 2.5em;
+}
+
+
+body {
+    font-family: 'Product Sans', sans-serif;
+    /*background-image: linear-gradient(130deg, #002145 , #01366c);*/
+    background-image: linear-gradient(160deg, #614385, #516395);
+    padding: 2%;
+    min-height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}  
+
+a {
+    color: #74ddf7;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+a:hover {
+    color: #1b7798;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Waltograph';
+    border-bottom: 3px solid #45c8e8;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.experience-date img {
+    height: 6em; 
+    width: 9em; 
+    margin-top: 0.4em;
+}
+
+.experience-item:hover .project-image-container img {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: border 0.1s ease-in-out;
+}
+
+
+.text-carousel-container {
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.text-carousel {
+    display: inline-block;
+    animation: scrollText 120s linear infinite;
+}
+
+.text-carousel span {
+    display: inline-block;
+    padding: 0 0.5em;
+    font-size:1em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.text-carousel .year {
+    font-weight: bold;
+    color: #74ddf7;
+}
+.text-carousel .separator {
+    font-weight: bold;
+    color: #74ddf7;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(13%); }
+    100% { transform: translateX(-100%); }
+}
+.typing-effect {
+    display: inline-block;
+    font-family: 'Trebuchet MS', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .1em solid #ffffff;
+    animation: typing 3s steps(100, end) forwards,
+        blink-caret 0.7s infinite step-end alternate;
+    text-align: left;
+}
+
+.content-section {
+    margin-bottom: 2em;
+}
+
+.content-section h3 {
+    text-align: left;
+}
+
+.content-section p {
+    font-size: 17.5px; 
+    color: lightgrey;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 8em; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ffffff; }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30%); /* start */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* end */
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes colorFade {
+    0% {
+        color: white;
+    }
+    33% {
+        color: lightblue;
+    }
+    66% {
+        color: darkblue;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@keyframes gradientFade {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.resume-link {
+    color: rgb(199, 191, 191);
+    font-size: 1.1em;
+    background: none;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.resume-link:hover {
+    color: transparent;
+    text-decoration: underline;
+    background: linear-gradient(to right, white, lightblue, darkblue, white);
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientFade 6s infinite linear;
+}
+
+.fade-in {
+    opacity: 0; /* Initial state */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInRight 2s ease-out;
+}
+
+.profile-picture {
+    flex: 1;
+    width: auto;
+    max-width: 60%;
+    /*max-width: 50%;*/
+    height: auto;
+    border-radius: 30%;
+    animation: fadeInUp 2s ease-out;
+}
+
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9%;
+    margin-bottom: 10%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.section a {
+    font-size: 0.9em;
+    color: #8a9b9f;
+    text-decoration: none;
+    position: relative;
+    padding-left: 2em;
+    text-align: left;
+    transition: padding-left 0.2s, color 0.2s, font-size 0.2s;
+}
+
+.section a:hover {
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-left: 3.5em;
+}
+
+.section a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5em;
+    height: 2px;
+    background-color: #83969b;
+    transition: width 0.1s, height 0.3s;
+}
+
+.section a:hover::before {
+    width: 3em;
+    height: 2.8px;
+    background-color: #ffffff;
+}
+
+.section a.active {
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-left: 3.5em;
+}
+
+.section a.active::before {
+    width: 3em;
+    height: 2.8px;
+    background-color: #ffffff;
+}
+
+.experience-item {
+    padding: 1em;
+    transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    margin-bottom: 2em;
+    animation: fadeInRight 2s ease-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.course-item {
+    padding: 1em;
+    transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 2em;
+    animation: fadeInRight 2s ease-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow-x: hidden; 
+}
+
+.experience-item:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(116, 221, 247, 0.7); 
+    transform: scale(1.03);
+}
+
+.experience-duration {
+    font-weight: bold;
+    color: lightgrey;
+    margin-bottom: 0.5em;
+}
+
+.experience-role {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: rgb(199, 191, 191); 
+}
+
+.experience-role a {
+    color: lightgrey;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.experience-role a:hover {
+    color: #1b7798;
+    text-decoration: underline;
+}
+
+.experience-description {
+    color: lightgrey;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.experience-description p {
+    color: lightgrey;
+    font-size: 16px;
+}
+
+.skills {
+    margin-top: 0.5em;
+}
+
+.skills span {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #74ddf7;
+    color: #000;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+}
+
+.skills h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #74ddf7;
+}
+
+.skills-logo {
+    transition: transform 0.2s ease;
+}
+
+.skills-logo:hover {
+    transform: scale(1.2);
+}
+
+
+.backend-logos img,
+.frontend-logos img {
+    height: 4em;
+    margin: 0.5em 1em;
+    transition: transform 0.2s ease;
+}
+
+.backend-logos img:hover,
+.frontend-logos img:hover {
+    transform: scale(1.1);
+}
+
+.backend-logos,
+.frontend-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.skills-section-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.skills-section-title-container .line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d8d4d4);
+}
+
+.skills-section-title-container .line.right {
+    background: linear-gradient(to left, transparent, #d8d4d4);
+}
+
+.skills-section-title {
+    margin: 0 1em;
+    white-space: nowrap;
+}
+
+.skills-section-title {
+    font-size: 1.7em; 
+    font-family: 'Trebuchet MS', sans-serif; 
+    text-align: center;
+}
+
+
+.experience-item a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.experience-item a:hover {
+    color: inherit; 
+}
+
+.experience-content {
+    display: flex;
+    gap: 1em; 
+    width: 100%;
+}
+
+.experience-date {
+    flex: 0 0 25%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+    color: lightgrey;
+    font-size: 13.5px; 
+    margin-top: 0.4em;
+}
+
+.experience-item > a > div > div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item a .experience-role span {
+    transition: color 0.3s ease;
+}
+
+.experience-item a:hover .experience-role span {
+    color: #74ddf7; 
+}
+
+.experience-item a .experience-date {
+    transition: color 0.3s ease;
+}
+
+.experience-item a:hover .experience-date {
+    color: #74ddf7;
+}
+
+h1 {
+    font-family: 'Waltograph';
+    color: #74ddf7;
+    text-align: left; 
+}
+
+
+footer {
+    border-top: 1px solid #1b1b1b;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+i {
+    color: #FFFFFF;
+}
+
+.profile-container {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; 
+    align-self: center;
+}
+
+
+li {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.fixed-column {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    margin-left: 5%; 
+    display: flex;
+    flex-direction: column;
+    padding: 6em;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    position: fixed; 
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.second-column {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    /*overflow-y: auto;*/
+    margin-right: 10%;
+    margin-left: 50%; 
+    box-sizing: border-box; 
+}
+
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    .profile-picture {
+        height: 20em;
+    }
+
+    .top-name h1 {
+        margin: 0; 
+        font-size: 6em; 
+        margin-bottom: 0.8em;
+        margin-top: 1em;
+        margin-left: 5%;
+    }
+
+    .starter-text p {
+        font-size: 2.7em;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .profile-container {
+        flex: 1;
+        margin-top: 2.7em;
+        margin-bottom: 5em;
+        max-width: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    
+    .section a {
+        font-size: 1.8em; 
+        color: #8a9b9f;
+        text-decoration: none;
+        position: relative;
+        padding-left: 2em; 
+        text-align: left; 
+        transition: padding-left 0.3s, color 0.3s, font-size 0.3s; 
+    }
+
+    .fixed-column {
+        position: relative; 
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 1em; 
+        height: auto; 
+        overflow-y: visible;
+    }
+
+    .second-column {
+        position: relative;
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1em;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .content-section p {
+        font-size: 40px;
+        color: lightgrey;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        text-align: left;
+    }
+
+    #about p {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .content-section h3{
+        font-size: 4em;
+    }
+
+    .pic-plus-title-socials {
+        margin-right: 0px;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .container {
+        flex-direction: column; 
+        /*margin: 0 !important;*/
+        /*padding: 0 !important; /* */
+        height: 100%;
+    }
+
+    .experience-role {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 2.4em;
+        text-align: left;
+        margin-bottom: 0.5em;
+        color: rgb(199, 191, 191);
+    }
+
+    .experience-date {
+        flex: 0 0 25%;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: bold;
+        color: lightgrey;
+        font-size: 32px; 
+        margin-top: 0.4em;
+    }
+
+    .resume-link {
+        color: rgb(199, 191, 191);
+        font-size: 3em;
+        text-decoration: underline;
+        background: none;
+        transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    .skills {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .skills span {
+        display: inline-block;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #74ddf7;
+        color: #000;
+        padding: 0.2em 0.5em;
+        border-radius: 5px;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 2.2em;
+    }
+
+    .skills-section-title {
+        font-size: 2.7em;
+    } 
+
+    .experience-date img {
+        height: 6em; 
+        width: 9em; 
+        margin-top: 0.4em;
+    }
+
+    .fade-in {
+        text-align: center;
+    }
+    
+    .fade-in.visible {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 5em;
+        margin-left: 0.5em; 
+    }
+    .social-title {
+        padding-top: 2.5em;
+        padding-left: 1em;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .second-column {
+        padding-top: 2.5em;
+        padding-left: 1em;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .social-icons img {
+        height: 4.3em; 
+    }
+
+    .social-icons {
+        padding-top: 1.5em;
+    }
+    p {
+        font-size: 2em;
+    }
+
+    .social-icons a {
+        margin: 0 1.3em;
+    }
+
+    h3 {
+        font-size: 3.5em;
+        justify-content: center;
+        display: flex;
+        padding-top: 0.7em;
+    }
+
+    ul {
+        font-size: 2em;
+    }
+
+    .text-carousel span {
+        font-size: 1.3em;
+    }
+
+    footer {
+        font-size: 1.3em;
+    }
+
+    .typing-effect {
+        width: 16em;
+        font-family: 'Product Sans', sans-serif;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 6.9em; } 
+    }
+
+    @keyframes scrollText {
+        0% { transform: translateX(5%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    .resume-button {
+        display: flex;
+        padding: 12px 24px;
+        background-color: #3498db;
+        color: #ffffff;
+        text-decoration: none;
+        justify-content: center;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 2.1em;
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .pic-plus-title-socials {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100vw !important;
+        max-width: none !important;
+        overflow-x: hidden;
+    }
+
+    .fixed-column,
+    .second-column {
+        position: static;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 1em !important;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .col-sm-6,
+    .offset-sm-6 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .fixed-top {
+        position: static !important;
+    }
+
+    .social-title,
+    .second-column {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+
+    .profile-container {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-picture {
+        max-width: 50%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 30%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sections {
+        display: none;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .social-icons a {
+        margin: 0 4em;
+    }
+
+    .profile-container {
+        margin-top: 2em;
+    }
+
+    .fa.fa-envelope-o, .fa-linkedin-square, .fa.fa-github, .fa.fa-instagram, .fab.fa-github-square{
+        font-size: 4em;
+    }
+
+    .skills-logo {
+        transform: scale(1.5);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+    }
+
+    .skills .row {
+        margin-bottom: 4em;
+    }
+
+    .skills .col-3,
+    .skills .col-4,
+    .skills .col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+}
+
+.resume-button {
+    display: flex;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 20% 0 20%;
+}
+
+.resume-button:hover {
+    background-color: #225e86;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.resume-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
